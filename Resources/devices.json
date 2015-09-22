@@ -1,0 +1,22 @@
+GET
+http://localhost:8080/RestfulAPIs/hubManager/devices
+get all the available devices for this hub manager
+===================
+{
+  "devices": [
+    {
+      "devicePlatform": "Android",
+      "deviceVersion": "4.3",
+      "isEmulator": true,
+      "deviceStatus": 1,
+      "hubStatus": 1
+    },
+    {
+      "devicePlatform": "Android",
+      "deviceVersion": "4.4.2",
+      "isEmulator": true,
+      "deviceStatus": 1,
+      "hubStatus": 1
+    }
+  ]
+}

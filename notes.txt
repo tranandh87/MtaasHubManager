@@ -1,0 +1,54 @@
+Resful api Url:
+
+Grid Info: http://localhost:8080/RestfulAPIs/gridInfo/gridUrl
+
+Eclise issue for tomcat 7 setup:
+http://stackoverflow.com/questions/14791843/eclipse-add-tomcat-7-blank-server-name
+
+Jackson for JSON:
+<param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+
+How to invoke using Rest Client:
+1. Set custom header: "Content-Type" : "application/json"
+2. Use this json body
+{
+"device" : "Android",
+"browserName" : "",
+"version" : "4.4.2",
+"platform" : "Linux",
+"packageName" : "com.ebay.mobile",
+"appActivity" : "com.ebay.mobile.activities.eBay",
+"className" : "AndroidExample"
+}
+
+
+========
+Sample nested request:
+{
+    "deviceConfig": [
+        {
+            "device": "Android",
+            "browserName": "",
+            "version": "4.1.2",
+            "platform": "Linux"
+        },
+        {
+            "device": "Android",
+            "browserName": "",
+            "version": "4.4.2",
+            "platform": "Linux"
+        }
+    ],
+    "autDetails": {
+        "packageName": "com.ebay.mobile",
+        "appActivity": "com.ebay.mobile.activities.eBay",
+        "appName": "ebay.apk"
+    },
+    "testSuite": {
+        "className": [
+            "AndroidExample",
+            "AndroidExample3"
+        ],
+        "suiteName": "mySuite"
+    }
+}

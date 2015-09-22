@@ -1,0 +1,51 @@
+GET
+http://localhost:8080/RestfulAPIs/hubManager/testMethodExecutionIdDetails/35
+where 35 is the testMethodExecutionId returned from the testClassExecutionIdDetails response
+
+{
+  "deviceConfig": {
+    "version": "4.3",
+    "platform": "Android",
+    "deviceConfigId": 17,
+    "isEmulator": 1
+  },
+  "testConfig": {
+    "suiteName": "mySuite",
+    "suiteExecutionId": 29,
+    "suiteStatus": "PASS",
+    "testName": "Android_Example",
+    "testExecutionId": 28,
+    "testStatus": "PASS",
+    "testMethodExecutionId": 35,
+    "testMethodName": "loginTest",
+    "testMethodStatus": "PASS"
+  },
+  "Operations": [
+    {
+      "action": "find",
+      "findBy": "id",
+      "selector": "com.ebay.mobile:id/accept_btn",
+      "status": "Success",
+      "currentAppActivity": ".activities.eBay"
+    },
+    {
+      "action": "element:click",
+      "status": "Success",
+      "elementId": "1",
+      "currentAppActivity": ".activities.TermsOfUseActivity"
+    },
+    {
+      "action": "find",
+      "findBy": "id",
+      "selector": "com.ebay.mobile:id/button_sign_in",
+      "status": "Success",
+      "currentAppActivity": ".activities.eBay"
+    },
+    {
+      "action": "element:click",
+      "status": "Success",
+      "elementId": "2",
+      "currentAppActivity": ".activities.eBay"
+    }
+  ]
+}

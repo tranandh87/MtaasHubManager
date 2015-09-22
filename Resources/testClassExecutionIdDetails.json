@@ -1,0 +1,32 @@
+GET
+http://localhost:8080/RestfulAPIs/hubManager/testClassExecutionIdDetail/28
+where 28 is the testClassExecutionId returned from the suiteIdExecutionSummary for the test class
+
+{
+  "deviceConfigs": {
+    "version": "4.3",
+    "platform": "Android",
+    "deviceConfigId": 17,
+    "isEmulator": 1
+  },
+  "testInfo": {
+    "suiteName": "mySuite",
+    "suiteExecutionId": 29,
+    "suiteStatus": "PASS",
+    "testName": "Android_Example",
+    "testExecutionId": 28,
+    "testStatus": "PASS"
+  },
+  "testMethodInfo": [
+    {
+      "testMethodExecutionId": 35,
+      "testMethodName": "loginTest",
+      "testMethodStatus": "PASS"
+    },
+    {
+      "testMethodExecutionId": 36,
+      "testMethodName": "register",
+      "testMethodStatus": "PASS"
+    }
+  ]
+}

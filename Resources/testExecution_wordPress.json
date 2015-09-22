@@ -1,0 +1,37 @@
+{
+    "deviceConfig": [
+        {
+            "device": "Android",
+            "version": "4.3",
+            "isEmulator" : true,
+            "manufacturer" : "N/A",
+            "model" : "N/A"
+        },
+        {
+            "device": "Android",
+            "version": "4.4.2",
+            "isEmulator" : true,
+            "manufacturer" : "N/A",
+            "model" : "N/A"
+        },
+        {
+            "device": "Android",
+            "version": "4.4.2",
+            "isEmulator" : false,
+            "manufacturer" : "lge",
+            "model" : "nexus 4"
+        }
+    ],
+    "autDetails": {
+		"packageName": "org.wordpress.android",
+		"appActivity": "org.wordpress.android.ui.posts.PostsActivity",
+        "appName": "wordpress_2.4.5.apk"
+    },
+    "testSuite": {
+        "className": [
+            "org.wordPress.test.WordpressLogInTest",
+			"org.wordPress.test.WordpressReaderTest"
+        ],
+        "suiteName": "WordpressTestSuite"
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "deviceConfig": [
+        {
+            "device": "Android",
+            "browserName": "",
+            "version": "4.4.2",
+            "platform": "Linux"
+        },
+        {
+            "device": "Android",
+            "browserName": "",
+            "version": "4.4.2",
+            "platform": "Linux"
+        }
+    ],
+    "autDetails": {
+        "packageName": "com.ebay.mobile",
+        "appActivity": "com.ebay.mobile.activities.eBay",
+        "appName": "ebay.apk"
+    },
+    "testSuite": {
+        "className": [
+            "AndroidExample"
+        ],
+        "suiteName": "mySuite"
+    }
+}
+
+==================
+device: PUT
+{
+    "platform": "Android",
+    "version": "4.4.2",
+    "isEmulator": true,
+    "hubIp" : "192.168.0.100",
+    "appiumNodeIp" : "192.168.0.100"
+}
+
+{
+    "devicePlatform": "Android",
+    "deviceVersion": "4.4.2",
+    "isEmulator": true,
+    "hubUrl" : "192.168.0.100",
+    "hubStatus": 1,
+    "hubPlatform":"Android",
+    "appiumNodeIp" : "192.168.0.100"
+}
+
+AVAILABLE(1),BUSY(0),UNAVAILABLE(8);
+
+=====================
+
+Delete Query:
+
+delete from MTAAS.TestExecutionResult;
+
+delete from MTAAS.TestSuiteExecutionResult;
+
+delete from MTAAS.TestMethodExecutionResult;
+
+delete from MTAAS.TestSuite;
+delete from MTAAS.Test;
+delete from MTAAS.TestMethod;

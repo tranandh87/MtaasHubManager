@@ -1,0 +1,39 @@
+
+****flush tables***************
+delete from MTAAS.Tracking;
+
+delete from MTAAS.TestMethodExecutionResult;
+
+delete from MTAAS.TestExecutionResult;
+
+delete from MTAAS.TestSuiteExecutionResult;
+
+delete from MTAAS.TestMethod;
+
+delete from MTAAS.Test;
+
+delete from MTAAS.TestSuite;
+
+delete from MTAAS.Device;
+
+delete from MTAAS.Hub;
+
+**********Selet queries*********
+
+select * from MTAAS.Device;
+
+SELECT * FROM MTAAS.TestSuite;
+
+select * from MTAAS.Test;
+
+select * from MTAAS.TestMethod;
+
+select * from MTAAS.TestExecutionResult;
+
+select * from MTAAS.TestSuiteExecutionResult;
+
+select * from MTAAS.TestMethodExecutionResult;
+
+select * from MTAAS.Hub;
+
+select * from MTAAS.Tracking;

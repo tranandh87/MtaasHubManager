@@ -1,0 +1,38 @@
+GET
+http://localhost:8080/RestfulAPIs/hubManager/requestIdExecutionSummary/26
+(26 is the executionRequestId returned from the testExecution response
+
+==================RESPONSE=============
+{
+  "deviceConfigs": [
+    {
+      "version": "4.3",
+      "platform": "Android",
+      "deviceConfigId": 17,
+      "isEmulator": 1
+    }
+  ],
+  "suiteName": "mySuite",
+  "suiteIdExecutionSummary": [
+    {
+      "deviceConfigId": 17,
+      "testSuiteExecutionId": 29,
+      "testClassSummary": {
+        "total": 1,
+        "passed": 1,
+        "skipped": 0,
+        "failed": 0
+      },
+      "executionStartTime": "2014-04-01 19:16:32.0",
+      "executionEndTime": "2014-04-01 19:18:32.0",
+      "testClassExecutionStatus": [
+        {
+          "status": "PASS",
+          "testClassExecutionId": 28,
+          "testClassName": "Android_Example"
+        }
+      ],
+      "suiteExecutionStatus": "PASS"
+    }
+  ]
+} 

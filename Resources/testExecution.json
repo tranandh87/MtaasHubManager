@@ -1,0 +1,49 @@
+PUT
+http://localhost:8080/RestfulAPIs/hubManager/test
+In header: set "Content-Type:application/json"
+
+==================================REQUEST=====================
+{
+    "deviceConfig": [
+        {
+            "device": "Android",
+            "version": "4.3",
+            "isEmulator" : false,
+            "manufacturer" : "samsung",
+            "model" : "SAMSUNG-SGH-I747"
+        },
+        {
+            "device": "Android",
+            "version": "4.4.2",
+            "isEmulator" : false,
+            "manufacturer" : "lge",
+            "model" : "Nexus 4"
+        },
+        {
+            "device": "Android",
+            "version": "4.3",
+            "isEmulator" : true,
+            "manufacturer" : "N/A",
+            "model" : "N/A"
+        }
+    ],
+    "autDetails": {
+        "packageName": "com.ebay.mobile",
+        "appActivity": "com.ebay.mobile.activities.eBay",
+        "appName": "eBayMobile.apk"
+    },
+    "testSuite": {
+        "className": [
+            "EbayLogin"
+        ],
+        "suiteName": "EbayTestSuite"
+    }
+}
+
+==========================RESPONSE======================
+{
+  "isRequestPassed": true,
+  "suiteId": 5,
+  "executionRequestId": 25,
+  "message": "Test is build successfully"
+}

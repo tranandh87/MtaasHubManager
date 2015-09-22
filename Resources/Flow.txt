@@ -1,0 +1,5 @@
+0. devices: users calls this endpoint to get all the available devices
+1. testExecution: User triggers a testExecution request, gets back executionRequestId in the response
+2. requestIdExecutionSummary: User uses that executionRequestId to get requestIdExecutionSummary, which includes all the testClassExecutionId
+3. testClassExecutionIdDetails: User uses testClassExecutionId to get the testClassExecutionIdDetails, which contains the testMethodExecutionId
+4. testMethodExecutionIdDetails: User uses testMethodExecutionId to get the testMethodExecutionIdDetails that contains all the tracking info  
